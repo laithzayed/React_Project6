@@ -1,0 +1,137 @@
+/*Configurações Globais*/
+
+.navbar-link {
+    text-decoration: none;
+}
+.navbar-icon {
+    list-style: none;
+}
+/*Início das configurações da header*/
+.container-navbar {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    /* font-family: sans-serif; */
+    background-color: #10121F;
+    
+    
+}
+.brand {
+    width: auto;
+    height: 100%;
+    float: left;
+    margin: 0 0 0 3%;
+}
+/*Início das configurações da Navigation*/
+.navbar-menu {
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+.navbar-ul {
+    width: 100%;
+    height: inherit;
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    overflow: hidden;
+}
+.navbar-link {
+    width: 40%;
+    height: inherit;
+    color:  #FFFFFF;
+    display: inline-block;
+    border-bottom: 3px solid transparent;
+}
+.navbar-link:hover {
+    /* border-bottom: 2px #BBFF39 solid; */
+    color:  #BBFF39;
+    
+}
+#menuToggle {
+    display: none;
+}
+.menu-icon {
+    display: none;
+}
+ #navbar-but{
+    background-color: #BBFF39;
+    width: 60%;
+    padding: 2px;
+    /* padding: 10px 8px; */
+    border-radius: 1.5rem ;
+    outline:none;
+    cursor: pointer;
+    font-family: 'Montserrat';
+    font-size:medium;
+    font-weight: bold;
+} 
+
+.btn-navbar{
+    background-color: #BBFF39;
+    border-radius: 1.5rem ;
+    font-size:medium;
+    font-weight: bold;
+    
+}
+/*Início das configurações da Navigation com dispositivos < 768px*/
+@media screen and (max-width: 768px) {
+
+
+    .btn-navbar{
+        background-color: none;
+        border-radius: none ;
+     }
+
+    .navbar-menu {
+        width: 100%;
+        height: auto;
+    }
+    .navbar-ul {
+        display: block;
+        max-height: 0;
+    	overflow: hidden;
+    	-webkit-transition: max-height 0.3s;
+    	-moz-transition: max-height 0.3s;
+        -ms-transition: max-height 0.3s;
+        -o-transition: max-height 0.3s;
+    	transition: max-height 0.3s;
+        /*Para fazer com que o menu saia da esquerda, você deve trocar max-height por max-width*/
+        /*Para fazer com que o menu saia da direita, você deve trocar max-height por max-width e setar float: right*/
+    }
+    .navbar-link {
+        display: block;
+        text-align: left;
+        width: 100%;
+        height: 50px;
+        background-color: #10121F;
+        padding: 10px 0px 10px 5%;
+    }
+    .navbar-link:hover {
+        border-bottom: 2px #BBFF39 solid;
+        color:  #BBFF39;
+        
+    }
+    .menu-icon {
+        width: 100px;
+        height: inherit;
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        line-height: 60px;
+        color: #BBFF39;
+    }
+    #menuToggle:checked ~ ul {
+        max-height: 350px;
+        /*Para fazer com que o menu saia da esquerda ou direita, você deve trocar max-height por max-width*/
+    }
+    .menu-icon i {
+        font-size: 1.7em;
+    }
+}

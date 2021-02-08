@@ -1,0 +1,15 @@
+
+  .background-ytb{
+    justify-content: center;
+    text-align: center;
+  }
+  .container-ytb{
+    padding: 2rem;
+  } 
+  
+  @media only screen and (max-width: 400px) {
+    .ytb-size{
+      height: '100';
+      width: '80%';
+    }
+  }

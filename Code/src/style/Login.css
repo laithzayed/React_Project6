@@ -1,0 +1,136 @@
+
+.container-login-register-logo{
+    /* padding: 50%; */
+    display: flex;
+    flex-direction: column;
+}
+.login-logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+}
+
+
+.container-login-register{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 5%;
+}
+/* Style inputs, select elements and textareas */
+.input-login,.input-register{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+  
+  /* Style the label to display next to the inputs */
+  .label-login,.label-register {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  .submit-login-div, .submit-register-div{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* Style the submit button */
+  .submit-login ,.submit-register{
+    font-family: 'Montserrat';
+    font-size: large;
+    font-weight: bold;
+    width: 50%;
+    background-color: #BBFF39;
+    margin-top: 4%;
+    color: #10121F;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 1.5rem ;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  } 
+  
+  .submit-login:hover,.submit-register:hover{
+    outline:none;
+    background-color: #a2d176 ;
+  }
+
+  .submit-login{
+    outline:none;
+  }
+
+  /* Style the container */
+  .container-login,.container-register {
+    border-top: 20px solid #BBFF39;
+    border-radius: 10px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 70%;
+    max-height: max-content;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10%;
+  }
+
+  
+  
+  
+  /* Floating column for labels: 25% width */
+  .col-25-login,.col-25-register {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  /* Floating column for inputs: 75% width */
+  .col-75-login,.col-75-register {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row-login:after,.row-register:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .Label-input{
+      text-align: center;
+  }
+
+  .login-error{
+    color: red;
+    font-size: small;
+    margin-top: 3%;
+    margin-left: 25%;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col-25-login, .col-75-login, .submit-login , .col-25-register, .col-75-register, .submit-register{
+      width: 100%;
+      margin-top: 5%;
+    }}
+
+    /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .container-login-register{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin-top: 5%;
+    }
+
+
+  }

@@ -1,0 +1,43 @@
+.TwoCard_wrapper {
+  background-color: linear-gradient(#7b7b7b,#5ccab5);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.InfoCard_container {
+  border-radius: 2.5rem;
+  background-color: #BBFF39;
+  height: 70%;
+  padding-top: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 5%;
+  width: 100%;
+  margin-right:  5%;
+  margin-left:  5%;
+}
+/* @media (max-width: 780px){
+  .InfoCard_container{
+    height: 40%;
+  }
+} */
+.info {
+  width: 100%;
+  font-size: 0.50rem;
+  font-weight: 200;
+  letter-spacing: 2px;
+  color:#070707
+}
+.info_key {
+  color: #ffffff;
+  border-bottom: solid 2px rgba(255,255,255,0.06);
+  font-weight: 400;
+}
+.info_key:last-child {
+  border: 0;
+}
+.info_value {
+  color: #ffffff;
+  font-weight: 200;
+}
